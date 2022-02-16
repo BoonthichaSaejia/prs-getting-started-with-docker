@@ -1,0 +1,50 @@
+docker-compose down
+docker container ls
+cd ..
+ls
+dir
+cd swarm-stack
+dir
+cd ..
+docker service ls
+cd swarm-stack
+docker image build
+docker image build -t bseajia/gsd:swarm-stack .
+docker image push bsaejia/gsd:swarm-stack
+docker image ls
+docker image rm bsaejia/gsd:swarm-stack
+docker image rm swarm-stacl
+docker image rm swarm-stack
+docker image rm bsaejia/gsd
+docker image build -t nigelpoulton/gsd:swarm-stack
+docker image build -t nigelpoulton/gsd:swarm-stack .
+docker image ls
+docker image push nigelpoulton/gsd:swarm-stack
+cd ..
+cd multi-container
+docker service create
+docker service create --name web -p 8080:8080 --replicas 3 bsaejia/gsd:first-container
+docker swarm init
+docker service create --name web -p 8080:8080 --replicas 3 bsaejia/gsd:first-container
+docker servise ls
+docker service ls
+docker container ls
+docker service ps web
+docker service scale web=10
+docker container ls
+cd ..
+docker service rm web
+docker container ls
+docker contianer ls
+docker container ls
+cd swarm-stack
+docker image build -t nigelpoulton/gsd:swarm-stack .
+docker image push nigelpoulton/gsd:swarm-stack
+docker stack deploy -c docker-compose.yml counter
+docker stack ls
+docker stack services counter
+docker stack ps counter
+vim docker
+vim docker-compose.yml
+docker stack rm counter
+doskey /history > commands.log

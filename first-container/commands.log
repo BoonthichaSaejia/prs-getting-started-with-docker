@@ -1,0 +1,50 @@
+ls -l
+ls
+dir
+cd pluralsight
+mkdir pluralsight
+cd pluralsight
+mkdir 2022-getting-started-with-docker
+cd 2022-getting-started-with-docker
+git version
+docker --version
+git clone git@github.com:nigelpoulton/gsd.git
+dds
+dir
+cd gsd
+dir
+cd first-container
+dir
+docker image build -t bsaejia/gsd:first-container .
+docker image ls
+docker image push bsaejia/gsd:first-container
+docker login
+docker image push bsaejia/gsd:first-container
+cd ..
+git push
+cd ..
+dir
+cd gsd
+git remote add origin git@github.com:BoonthichaSaejia/prs-getting-started-with-docker.git
+git remote set-url origin git@github.com:BoonthichaSaejia/prs-getting-started-with-docker.git
+git remote add origin git@github.com:BoonthichaSaejia/prs-getting-started-with-docker.git
+git branch -M main
+git push -u origin main
+cd first-container
+docker image rm bsaejia/gsd:first-container
+docker image ls
+docker container run -d --name web -p 8000:8080
+docker container run -d --name web -p 8000:8080 bsaejia/gsd:first-container
+docker container run -d --name web -p 7000:8080 bsaejia/gsd:first-container
+docker image rm bsaejia/gsd:first-container
+docker image -f rm bsaejia/gsd:first-container
+docker container ls
+docker image ls
+docker container stop web
+docker container ls
+docker container ls -a
+docker container start web
+docker container stop web
+docker container rm web
+docker container start web
+doskey /history > commands.log
